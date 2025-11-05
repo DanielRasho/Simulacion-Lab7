@@ -873,7 +873,7 @@ print("=" * 80)
 
 # Generar secuencias de bits
 # N = 1_000_000
-N = 100_000
+N = 1_000_000
 print(f"\nGenerando {N:,} bits con cada generador...\n")
 
 lcg = BitGeneratorLCG(seed=42)
