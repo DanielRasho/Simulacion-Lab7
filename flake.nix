@@ -26,7 +26,7 @@
         p.scipy
         p.matplotlib
         p.seaborn
-        p.jupyter-lab
+        p.jupyterlab
       ]);
     in {
       default = pkgs.mkShell {
