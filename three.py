@@ -499,19 +499,6 @@ def run_nist_battery(uniform_sample, generator_name="Generator"):
     return results
 
 
-# Generar muestras
-m1 = 2**31 - 1
-a1 = 7**5
-c1 = 0
-seed1 = 123456789
-N = 100_000  # Reducido para velocidad
-
-print("Generando muestras...")
-lcg1 = LCG(seed1, a1, c1, m1)
-sample_uniform_lcg1 = lcg1.generate_uniform(N)
-
-mt = MersenneTwister(seed=42)
-sample_uniform_mt = mt.generate_uniform(N)
 
 # Ejecutar pruebas
 results_lcg = run_nist_battery(
